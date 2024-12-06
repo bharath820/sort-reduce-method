@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// TASK 1 
+
+// Calculate the sum of all numbers in an array using reduce method.
+
+let arr=[4,6,9,3,6,1]
+
+function fun(sum,value){
+    return sum+value
+}
+let add=arr.reduce(fun)
+console.log(add);
+
+
+
+
+
+//TASK 2
+
+// Calculate the average of an array of numbers.
+
+let avg=[46,87,93,24]
+let av=avg.reduce(function ag(a,b){
+    return a+b;
+},0)/avg.length;
+console.log(av)
+
+
+
+//TASK 3
+
+//Filter out people who are under 18
+
+const people = [
+  { name: "John", age: 17 },
+  { name: "Jane", age: 22 },
+  { name: "Jim", age: 15 },
+  { name: "Jack", age: 19 }
+];
+
+let pope=people.filter((adult)=>{
+    return adult.age > 18
+})
+
+console.log(pope)
+
+
+    </script>
+</body>
+</html>
